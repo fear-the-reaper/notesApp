@@ -1,0 +1,101 @@
+
+/* INDEX.HBS START*/
+.container {
+    min-height: 405px;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+}
+
+.footer-elements {
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.footer-links {
+    color: white
+}
+
+/* #creation {
+    color: white;
+    margin-left: 15px;
+    padding: 10px 25px;
+} */
+
+#fav-link-spaces {
+    padding: 10px 35px;
+    margin-left: 840px;
+}
+
+.header {
+    background-color: #0B0A07;
+}
+
+.functions-border {
+    margin: 50px 50px;
+    padding: 10px 10px;   
+}
+
+.add {
+    color: antiquewhite;
+    border: 1px solid #16F4D0;
+    background: #333333;
+    width: 75%;
+    padding: 25px 100px;
+}
+
+.spaces  {
+    margin-left: 125px;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+
+#notes {
+    padding: 10px 10px;
+}
+
+.border-radius {
+    border-radius: 0px;
+    padding: 5px 15px;
+}
+
+.button-space {
+    margin-left: 10px;
+}
+
+.list-display {
+    margin: 10px 85px;
+    padding: 10px 10px;
+}
+
+.prompt {
+    width: 50%;
+    display: none;
+    padding: 10px 0px;
+}
+
+/* INDEX.HBS END*/
+
+/* About.hbs START */
+
+.about-element {
+    padding: 15px 20px;
+}
+
+.card-body {
+    padding: 1.9rem;
+}
+
+.btn-link{
+    color: white;
+}
+
+
+.collapsable-header {
+    background: #333333;
+}
+/* About.hbs END */
