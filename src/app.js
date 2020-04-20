@@ -14,6 +14,13 @@ app.set("views", templates);
 hbs.registerPartials(partials);
 app.use(express.static(mainPage));
 
+let port;
+if (!process.env.PORT) {
+    port = 3000;
+} else {
+    port = process.env.PORT;
+}
+
 
 // Page-Routes
 app.get("/", (req, res) => {
@@ -79,6 +86,6 @@ app.get("/loadNotes", (req, res) => {
    res.send({notes});
 });
 
-app.listen(3000, ()=> {
-    console.log("server listening @ 3000!");
+app.listen(port, ()=> {
+    console.log("server listening @ " + port + "!");
 });
