@@ -34,7 +34,7 @@ const displayList = () => {
             console.log(notes);
             return notes.forEach(({title, body}) => {
                 template = `
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                <div class="col-lg-3 col-md-6 mb-2">
                     <div class="card">
                         <h5 class="card-header">${title}</h5>
                         <div class="card-body">
