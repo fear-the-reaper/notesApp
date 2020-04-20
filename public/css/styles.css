@@ -1,90 +1,67 @@
 
 /* INDEX.HBS START*/
-.container {
+.container-fluid {
     min-height: 405px;
 }
 
-.footer {
-    width: 100%;
-    height: 80px;
-    padding-top: 20px;
+.minHeight {
+    min-height: 410px;
 }
-
-.footer-elements {
-    color: white;
-    padding: 10px 15px;
-    display: inline-block;
-}
-
-.footer-links {
-    color: white
-}
-
-/* #creation {
-    color: white;
-    margin-left: 15px;
-    padding: 10px 25px;
-} */
-
-#fav-link-spaces {
-    padding: 10px 35px;
-    margin-left: 840px;
-}
-
-.header {
-    background-color: #0B0A07;
-}
-
-.functions-border {
-    margin: 50px 50px;
-    padding: 10px 10px;   
-}
-
-.add {
-    color: antiquewhite;
-    border: 1px solid #16F4D0;
-    background: #333333;
-    width: 75%;
-    padding: 25px 100px;
-}
-
-.spaces  {
-    margin-left: 125px;
-    margin-top: 10px;
-    margin-bottom: 10px;    
-}
-
-#notes {
-    padding: 10px 10px;
-}
-
-.border-radius {
+.card {
     border-radius: 0px;
+}
+
+.cards-bg {
+    background-color: #e7e8ec;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.btn {
     padding: 5px 15px;
+    border-radius: 0px;
 }
 
-.button-space {
-    margin-left: 10px;
+.bg-dark {
+    background-color: #0B0A07!important;
 }
 
-.list-display {
-    margin: 10px 85px;
-    padding: 10px 10px;
+.bg-secondary {
+    background-color: #202040!important;
 }
 
-.prompt {
-    width: 50%;
+.icons {
+    width: fit-content;
+}
+
+
+
+.prompt  {
     display: none;
-    padding: 10px 0px;
 }
+
 
 /* INDEX.HBS END*/
 
 /* About.hbs START */
 
 .about-element {
+    border-radius: 50px!important;    
     padding: 15px 20px;
+    width: 230px;
 }
+
+.border-remove {
+    border: 0px;
+}
+
+.about-card-body {
+    border: 1px solid #333333;
+    border-radius: 50px;
+}
+
 
 .card-body {
     padding: 1.9rem;

@@ -39,7 +39,7 @@ app.get("/help", (req, res) => {
 // HTTPS API End-points 
 app.get("/add", (req, res) => {
     ({title, body} = req.query);
-    if(!(title) && !(body)){
+    if(!(title) || !(body)){
         return res.send({
             error: "put a title and body you fucking retard"
         });

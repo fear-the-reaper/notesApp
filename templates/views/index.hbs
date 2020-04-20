@@ -8,35 +8,67 @@
 <body>
     {{>header}}
     
-    <div class="container functions-border">
-        <div class="add spaces flex-wrap">
-            <form class="form-inline">
-                <div class="form-group mb-2">
-                    <label for="text" class="sr-only">Password</label>
-                    <input type="text" class="form-control border-radius" placeholder="title">
-                </div>
-                <div class="form-group mx-sm-3 mb-2">
-                    <label for="text" class="sr-only">Password</label>
-                    <input type="text" class="form-control border-radius" placeholder="body">
-                </div>
-                <button type="submit" class="btn btn-primary btn-outline-info mb-2" value="add">add</button>
-                <button type="submit" class="btn btn-primary btn-outline-danger mb-2 button-space" value="remove">remove</button>
-            </form>
-            <div class="prompt">
-                you added a note!
-            </div>            
-        </div>
-        <div class="spaces" id="notes">
-            <div class="text-monospace text-bold">
-                <h1>
-                    Your Notes here
-                </h1>
-                <div class="list-display">
-                    <ol>
+    <!-- forms -->
+    <div class="mt-5 mb-5 container">
+        <nav class="nav nav-pills justify-content-center flex-column flex-sm-row text-center">
+            <a class="nav-item nav-link active" href="#add" data-toggle="tab">Add a note</a>
+            <a class="nav-item nav-link" href="#remove" data-toggle="tab">Remove a note</a>
+        </nav>
+    
+        <div class="tab-content">
+            <div class="tab-pane text-center p-4 active" id="add">
+                <form class="form-inline justify-content-center">
+                    <div class="row">
+                        <div class="form-group col-md-5">
+                            <label for="text" class="sr-only">Title</label>
+                            <input type="text" class="form-control" placeholder="title">
+                        </div>
                         
-                    </ol>
+                        <div class="form-group col-md-5">
+                            <label for="text" class="sr-only">Body</label>
+                            <input type="text" class="form-control" placeholder="body">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary" value="add">add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="tab-pane text-center p-4" id="remove">
+                <form class="form-inline justify-content-center ">
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label for="text" class="sr-only">Title</label>
+                            <input type="text" class="form-control" placeholder="title">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit"  class="btn btn-danger" id = "form-remove" value="remove">remove</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container p-2 prompt">
+            <div class="row justify-content-center">
+                <div class="lead">
+                
                 </div>
             </div>
+        </div>
+    </div>
+
+    
+
+    <!-- notes-display -->
+    <div class="container-fluid cards-bg">
+        <div class="row">
+            <div class="col-12 display-4 p-2">
+                Your Notes here:
+            </div>
+        </div>
+        <div class="row p-4">
+            
         </div>
     </div>
 
@@ -46,5 +78,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="/js/app.js"></script>
+    <script src="/js/emailCopy.js"></script>
 </body>
 </html>

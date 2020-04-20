@@ -10,9 +10,9 @@
 <body>
     {{>header}}
 
-    <div class="container functions-border">
-        <div class="card">
-            <div class="card-header collapsable-header about-element" id="headingOne">
+    <div class="container minHeight py-5">
+        <div class="card border-remove mb-1 align-items-center">
+            <div class="card-header collapsable-header about-element text-center" id="headingOne">
             <h5 class="mb-0">
                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 {{header1}}
@@ -21,13 +21,25 @@
             </div>
 
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card-body about-card-body text-center">
+                   To add a note click on the <strong>Add a note</strong> button, after that
+                   provide:
+                   <div class="p-4">
+                        <div>
+                            1. Title (<strong>required</strong>)
+                        </div>
+                        <div>
+                            2. Body (optional)
+                        </div>
+                    </div>
+                   then press <strong>enter</strong> on your keyboard or 
+                   click the <strong>add</strong> button with the blue background with your mouse.
+                   <strong>If you fail to provide a title or enter a previous entries title you'll be met with not so friendly prompts :)</strong>
                 </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-header collapsable-header about-element" id="headingTwo">
+        <div class="card border-remove mb-1 align-items-center">
+            <div class="card-header collapsable-header about-element text-center" id="headingTwo">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     {{header2}}
@@ -35,13 +47,22 @@
                 </h5>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card-body about-card-body text-center">
+                    To remove a note click on the <strong>Remove a note</strong> button, after that
+                    provide:
+                    <div class="p-4">
+                        <div>
+                            1. Title (<strong>required</strong>)
+                        </div>
+                    </div>
+                   then press <strong>enter</strong> on your keyboard or 
+                   click the <strong>remove</strong> button with the red background with your mouse.
+                   <strong>If you fail to provide a title or enter a one that isn't there you'll be met with not so friendly prompts :)</strong>
                 </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-header collapsable-header about-element" id="headingThree">
+        <div class="card border-remove mb-1 align-items-center">
+            <div class="card-header collapsable-header about-element text-center" id="headingThree">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     {{header3}}
@@ -49,8 +70,9 @@
                 </h5>   
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="card-body about-card-body text-center">
+                    The notes will displayed below the forms after the prompt <strong>Your notes here</strong>.
+                    If you don't have any notes the prompt will change to <strong>Got no notes son</strong>
                 </div>
             </div>
         </div>
@@ -60,5 +82,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/js/emailCopy.js"></script>
 </body>
 </html>
