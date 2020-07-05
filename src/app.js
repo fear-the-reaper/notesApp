@@ -48,7 +48,7 @@ app.get("/add", (req, res) => {
     ({title, body} = req.query);
     if(!(title) || !(body)){
         return res.send({
-            error: "put a title and body you fucking retard"
+            error: "Required to put a title and some text in the body"
         });
     }
     const note = {
@@ -69,7 +69,7 @@ app.get("/remove", (req, res) => {
     ({title} = req.query);
     if(!title){
         return res.send({
-            error: "give me a title to delete jackass"
+            error: "Enter the title of the desired Note"
         });
     }
     notesApi.removeNotes(title, (error, notes) => {
