@@ -35,7 +35,7 @@ const addNotes = (note, callback) => {
         const isDuplicate = duplicate(note.title);
         if(isDuplicate){
             const error = {
-                error: "you already added this you bitch"
+                error: "you already added this!"
             };
             callback(error);
         }else{
@@ -56,7 +56,7 @@ const removeNotes = (title, callback) => {
   const isDuplicate = duplicate(title);  
   if(!isDuplicate){
       const error = {
-        error: "This ain't here hoe"
+        error: "Note not found! Try adding it!"
       };
       callback(error, undefined); 
   }else{
